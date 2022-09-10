@@ -14,7 +14,7 @@ void main() async {
   BaseWeatherRepository baseWeatherRepository =
       WeatherRepository(baseRemoteDataSource);
 
-  // Using useCase
+  // Using useCases
   Weather weather =
       await GetWeatherByCountryName(baseWeatherRepository).execute('Egypt');
   log(weather.toString());

@@ -9,7 +9,7 @@
 // Abstractions should not depend on details.
 import '../entities/weather.dart';
 
-// Just contract and abstract class
+// Just contract and abstract class.
 abstract class BaseWeatherRepository {
   Future<Weather> getWeatherByCityName(String cityName);
 }
