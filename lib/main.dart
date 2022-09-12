@@ -10,6 +10,7 @@ import 'package:weather_app/weather/domain/usecases/get_weather_by_country.dart'
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
+  // Initialize references from empty objects
   BaseRemoteDataSource baseRemoteDataSource = RemoteDataSource();
   BaseWeatherRepository baseWeatherRepository =
       WeatherRepository(baseRemoteDataSource);
